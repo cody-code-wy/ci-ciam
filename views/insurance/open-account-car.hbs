@@ -20,7 +20,7 @@
 					<div class="input-list-box">
 						<div class="formRow">
 							<label>Your birthday</label>
-							<input type="date" name="birthday" placeholder="Your birthday" {{#if birthday}}value="{{birthday}}" {{/if}} onFocus="this.placeholder = ''">
+							<input type="date" data-autofill="birthday" name="birthday" placeholder="Your birthday" {{#if birthday}}value="{{birthday}}" {{/if}} onFocus="this.placeholder = ''">
 
 							<div class="inputLine"></div>
 						</div>
@@ -28,7 +28,7 @@
 					<div class="input-list-box">
 						<div class="formRow">
 							<label>Your zip code</label>
-							<input type="zip" name="zip" placeholder="Your zip code" {{#if zip}}value="{{zip}}" {{/if}} onFocus="this.placeholder = ''">
+							<input type="zip" data-autofill="zip" name="zip" placeholder="Your zip code" {{#if zip}}value="{{zip}}" {{/if}} onFocus="this.placeholder = ''">
 							<div class="inputLine"></div>
 						</div>
 					</div>
@@ -36,7 +36,7 @@
 					<div class="input-list-box">
 						<div class="formRow">
 							<label style="opacity: 1 !important;">Make</label>
-							<select name="carMake">
+							<select data-autofill="carMake" name="carMake">
 								<option value="none">-- select --</option>
 								<option value="volvo">Volvo</option>
 								<option value="saab">Saab</option>
@@ -49,7 +49,7 @@
 					<div class="input-list-box">
 						<div class="formRow">
 							<label style="opacity: 1 !important;">Model</label>
-							<select name="carModel">
+							<select data-autofill="carModel" name="carModel">
 								<option value="none">-- select --</option>
 								<option value="S100">S100</option>
 								<option value="S200">S200</option>
@@ -62,7 +62,7 @@
 					<div class="input-list-box">
 						<div class="formRow">
 							<label>Year</label>
-							<input type="input" name="carYear" placeholder="Car year" onFocus="this.placeholder = ''">
+							<input type="input" data-autofill="carYear" name="carYear" placeholder="Car year" onFocus="this.placeholder = ''">
 							<div class="inputLine"></div>
 						</div>
 					</div>

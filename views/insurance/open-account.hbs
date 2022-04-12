@@ -27,20 +27,20 @@
 					<div class="input-list-box">
 						<div class="formRow">
 							<label>First name</label>
-							<input type="text" name="givenName" placeholder="First name" {{#if loggedIn}}readonly="readonly" value="{{givenName}}" style="color:#9e9e9e"{{/if}} onFocus="this.placeholder = ''">
+							<input type="text" data-autofill="givenName" name="givenName" placeholder="First name" {{#if loggedIn}}readonly="readonly" value="{{givenName}}" style="color:#9e9e9e"{{/if}} onFocus="this.placeholder = ''">
 							<div class="inputLine"></div>
 						</div>
 					</div>
 					<div class="input-list-box">
 						<div class="formRow">
 							<label>Last name</label>
-							<input type="text" name="familyName" placeholder="Last name" {{#if loggedIn}}readonly="readonly" value="{{familyName}}" style="color:#9e9e9e"{{/if}}onFocus="this.placeholder = ''">
+							<input type="text" data-autofill="familyName" name="familyName" placeholder="Last name" {{#if loggedIn}}readonly="readonly" value="{{familyName}}" style="color:#9e9e9e"{{/if}}onFocus="this.placeholder = ''">
 							<div class="inputLine"></div>
 						</div>
 					</div><div class="input-list-box">
 						<div class="formRow">
 							<label>Email</label>
-							<input type="email" name="email" placeholder="Email" {{#if loggedIn}}readonly="readonly" value="{{email}}" style="color:#9e9e9e"{{/if}} onFocus="this.placeholder = ''">
+							<input type="email" data-autofill="email" name="email" placeholder="Email" {{#if loggedIn}}readonly="readonly" value="{{email}}" style="color:#9e9e9e"{{/if}} onFocus="this.placeholder = ''">
 							<div class="inputLine"></div>
 						</div>
 					</div>

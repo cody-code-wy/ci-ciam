@@ -20,14 +20,14 @@
 					<div class="input-list-box">
 						<div class="formRow">
 							<label style="opacity: 1 !important;">What year was the home built?</label>
-							<select id="ageHome" name="ageHome" onFocus="this.placeholder = ''"></select>
+							<select id="ageHome" data-autofill="ageHome" name="ageHome" onFocus="this.placeholder = ''"></select>
 							<div class="inputLine"></div>
 						</div>
 					</div>
 					<div class="input-list-box">
 						<div class="formRow">
 							<label style="opacity: 1 !important;">Your birthday</label>
-							<input type="date" id="birthday" name="birthday" style="color:#111111" onFocus="this.placeholder = ''" {{#if birthday}}value="{{birthday}}" {{/if}}>
+							<input type="date" id="birthday" data-autofill="birthday" name="birthday" style="color:#111111" onFocus="this.placeholder = ''" {{#if birthday}}value="{{birthday}}" {{/if}}>
 							<div class="inputLine"></div>
 						</div>
 					</div>
@@ -35,22 +35,22 @@
 						<div class="formRow" style="display:inline-flex">
 							<div style="padding-right:.5rem; width:50%">
 								<label style="opacity: 1 !important;">Your property address</label>
-								<input type="text" name="streetAddress" placeholder="Ex. 1234 Main St" onFocus="this.placeholder = ''">
+								<input type="text" data-autofill="streetAddress" name="streetAddress" placeholder="Ex. 1234 Main St" onFocus="this.placeholder = ''">
 								<div class="inputLine"></div>
 							</div>
 							<div style="padding-right:.5rem; width:25%">
 								<label style="opacity: 1 !important;">City</label>
-								<input type="city" name="city" placeholder="New York" onFocus="this.placeholder = ''">
+								<input type="city" data-autofill="city" name="city" placeholder="New York" onFocus="this.placeholder = ''">
 								<div class="inputLine"></div>
 							</div>
 							<div style="padding-right:.5rem; width:25%">
 								<label style="opacity: 1 !important;">State</label>
-								<input type="state" name="state" placeholder="New York" onFocus="this.placeholder = ''">
+								<input type="state" data-autofill="state" name="state" placeholder="New York" onFocus="this.placeholder = ''">
 								<div class="inputLine"></div>
 							</div>
 							<div style="padding-right:.5rem; width:25%">
 								<label style="opacity: 1 !important;">Your zip code</label>
-								<input type="zip" name="zip" placeholder="Your zip code" {{#if zip}}value="{{zip}}" {{/if}} onFocus="this.placeholder = ''">
+								<input type="zip" data-autofill="zip" name="zip" placeholder="Your zip code" {{#if zip}}value="{{zip}}" {{/if}} onFocus="this.placeholder = ''">
 								<div class="inputLine"></div>
 							</div>
 						</div>
@@ -61,7 +61,7 @@
 					<div class="input-list-box">
 						<div class="formRow">
 							<label style="opacity: 1 !important;">Construction type</label>
-							<select name="homeType">
+							<select data-autofill="homeType" name="homeType">
 								<option value="none">-- select --</option>
 								<option value="wood">Wood frame</option>
 								<option value="steel">Steel frame</option>
